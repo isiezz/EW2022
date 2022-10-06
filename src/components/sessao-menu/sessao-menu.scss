@@ -1,0 +1,68 @@
+@font-face {
+  font-family: MontserratMedium;
+  src: url("../../fonts/MontserratAlternates-Medium.ttf");
+}
+
+#SessaoMenu {
+  font-family: MontserratMedium;
+  z-index: 999;
+  .Navgc {
+    width: 100%;
+    height: 70px;
+  }
+
+  .navbar {
+    background-color: #d4dbe4;
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    z-index: 1;
+
+    #header {
+      .headerBody {
+        margin-left: auto;
+
+        .nav-link {
+          color: #1416ed;
+          padding-right: 25px;
+          border-right: 1px solid #1416ed;
+          padding-left: 25px;
+        }
+
+        .NavLast {
+          border-right: unset;
+        }
+
+        .nav-item {
+          padding-left: 5px;
+          margin: auto;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 991.98px) {
+  #SessaoMenu {
+    .navbar-toggler {
+      display: none;
+    }
+    #header {
+      width: 60%;
+      .offcanvas-header {
+        background-color: #d4dbe4;
+      }
+      .offcanvas-body {
+        font-family: MontserratMedium;
+        font-size: large;
+
+        .nav-link {
+          color: #1416ed;
+          margin-bottom: 20px;
+          padding-left: 10px;
+          border-left: 1px solid #1416ed;
+        }
+      }
+    }
+  }
+}

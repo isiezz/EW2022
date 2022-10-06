@@ -1,0 +1,73 @@
+@font-face {
+  font-family: MontserratSemiBold;
+  src: url("../../fonts/MontserratAlternates-SemiBold.ttf");
+  font-family: MontserratMedium;
+  src: url("../../fonts/MontserratAlternates-Medium.ttf");
+}
+
+#quemPassouAqui {
+  background-color: #1416ed;
+  padding: 50px 0;
+
+  .imgMicrofone {
+    display: flex;
+    align-items: center;
+    font-family: MontserratSemiBold;
+  }
+  .cartoes {
+    padding-top: 55px;
+    padding-bottom: 200px;
+    position: relative;
+    font-family: MontserratMedium;
+  }
+  .card {
+    background-color: #1416ed;
+    display: flex;
+    align-items: center;
+    border-style: square;
+    .card-body {
+      position: absolute;
+      top: 9.5rem;
+      align-items: center;
+      border: 3px solid white;
+      color: white;
+      width: 95%;
+      height: 225px;
+      .card-title {
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+      .card-text {
+        font-size: 16px;
+        padding-top: 0%;
+      }
+    }
+  }
+}
+
+@media (max-width: 991.98px) {
+  #quemPassouAqui {
+    display: flex;
+    .imgMicrofone {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+    .cartoes {
+      padding-top: 70px;
+      padding-bottom: 70px;
+    }
+    .card {
+      .card-body {
+        top: 13.2rem;
+        height: 140px;
+        .card-title {
+          font-size: 18px;
+        }
+        .card-text {
+          font-size: 16px;
+          padding-top: 0%;
+        }
+      }
+    }
+  }
+}
