@@ -17,9 +17,9 @@ class SessaoQuem extends Component {
     return (
       <section id="quemPassouAqui">
         <Container>
-          <Row>
-            <Col lg={12}>
-              <Card style={{ width: "18rem" }}>
+          <Row className = "row">
+            
+              <Card style={{ width: "80%" }}>
                 <Card.Img
                   variant="top"
                   src={img} width={"100%"}
@@ -41,7 +41,7 @@ class SessaoQuem extends Component {
                   <Card.Link href="#">Another Link</Card.Link>
                 </Card.Body>
               </Card>
-            </Col>
+            
           </Row>
         </Container>
       </section>

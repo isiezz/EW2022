@@ -15,8 +15,13 @@
 
 @media (max-width: 991.98px) {
   #quemPassouAqui {
+
     display: flex;
-    justify-content: center;
+   
+    .row{
+      display: flex;
+      place-content: center;
+    }
     .nbr{
       background-color: green;
     }
