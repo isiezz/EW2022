@@ -4,14 +4,8 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
 import reportWebVitals from './reportWebVitals';
-import SessaoMenu from "./components/sessao-menu/sessao-menu";
-import SessaoFooter from "./components/sessao-footer/sessao-footer";
-import SessaoApoiadores from "./components/sessao-apoiadores/sessao-apoiadores";
-import SessaoSobre from "./components/sessao-sobre/sessao-sobre";
-import SessaoEventos from "./components/sessao-eventos/sessao-eventos";
-import SessaoBanner from "./components/sessao-banner/sessao-banner";
 import SessaoQuem from "./components/sessao-quem/sessao-quem";
-import SessaoSpaceApp from "./components/sessao-space-apps/sessao-space-apps";
+
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -19,14 +13,7 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <Router>
-      <SessaoMenu />
-      <SessaoBanner />
-      <SessaoSobre />
-      <SessaoEventos />
       <SessaoQuem />
-      <SessaoSpaceApp />
-      <SessaoApoiadores />
-      <SessaoFooter />
     </Router>
   </React.StrictMode>
 );
