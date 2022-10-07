@@ -12,16 +12,16 @@ import {
 import { Link } from "react-router-dom";
 import "./sessao-quem.scss";
 import img from "../../images/ImgGeane.jpeg";
-import logo from "../../images/logo_coamo.png"
+import logo from "../../images/logo_coamo.png";
 
 class SessaoQuem extends Component {
   render(): React.ReactNode {
     return (
       <section id="quemPassouAqui">
         <Container>
-          <Row></Row>
+          <img src={logo} alt="logo" className="logo"/>
           <Row className="row">
-            <Card style={{ width: "80%" }}>
+            <Card className = "cartao"style={{ width: "80%" }}>
               <Card.Img variant="top" src={img} width={"100%"} />
               <Card.Body>
                 <Card.Title>Geane Magalhães Reis</Card.Title>
@@ -40,12 +40,11 @@ class SessaoQuem extends Component {
                   </b>
                 </ListGroup.Item>
                 <ListGroup.Item>
-                  <b>Integração:{" "}</b>
+                  <b>Integração: </b>
                   <Badge className="nbr" bg="success">
                     <b>Válido</b>
                   </Badge>
                 </ListGroup.Item>
-          
               </ListGroup>
               <Card.Body>
                 <Button variant="primary">
