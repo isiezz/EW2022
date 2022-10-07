@@ -13,7 +13,17 @@ import { Link } from "react-router-dom";
 import "./sessao-quem.scss";
 import img from "../../images/ImgGeane.jpeg";
 import logo from "../../images/logo_coamo.png";
+import Webcam from "react-webcam";
+const WebcamComponent = () => <Webcam />;
+class WebcamCapture extends React.Component {
+  render() {
+    const videoConstraints = {
+      facingMode: "user"
+    };
 
+    return <Webcam videoConstraints={videoConstraints} />;
+  }
+}
 class SessaoQuem extends Component {
   render(): React.ReactNode {
     return (
@@ -48,7 +58,8 @@ class SessaoQuem extends Component {
               </ListGroup>
               <Card.Body>
                 <Button variant="primary">
-                  <b>Avançar para reconhecimento facial</b>
+                <Webcam audio={false}/>
+            <b>Avançar para reconhecimento facial</b>
                 </Button>
               </Card.Body>
             </Card>
