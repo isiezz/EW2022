@@ -7,41 +7,52 @@ import {
   Row,
   ListGroup,
   Badge,
+  Button,
 } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "./sessao-quem.scss";
-import img from "../../images/img-murilo.png";
+import img from "../../images/ImgGeane.jpeg";
+import logo from "../../images/logo_coamo.png"
 
 class SessaoQuem extends Component {
   render(): React.ReactNode {
     return (
       <section id="quemPassouAqui">
         <Container>
-          <Row className = "row">
-            
-              <Card style={{ width: "80%" }}>
-                <Card.Img
-                  variant="top"
-                  src={img} width={"100%"}
-                />
-                <Card.Body>
-                  <Card.Title>Geane Magalhães Reis</Card.Title>
-                  <Card.Text>
-                    Tecnica em manutenção elétrica
-                  </Card.Text>
-                </Card.Body>
-                <ListGroup className="list-group-flush">
-                  <ListGroup.Item><h5>Empresa: Fundação Educere</h5></ListGroup.Item>
-                  <ListGroup.Item><h5>Certificação: <Badge className="nbr" bg="success">NBR33</Badge>
-      </h5></ListGroup.Item>
-                  <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
-                </ListGroup>
-                <Card.Body>
-                  <Card.Link href="#">Card Link</Card.Link>
-                  <Card.Link href="#">Another Link</Card.Link>
-                </Card.Body>
-              </Card>
-            
+          <Row></Row>
+          <Row className="row">
+            <Card style={{ width: "80%" }}>
+              <Card.Img variant="top" src={img} width={"100%"} />
+              <Card.Body>
+                <Card.Title>Geane Magalhães Reis</Card.Title>
+                <Card.Text>Tecnica em manutenção elétrica</Card.Text>
+              </Card.Body>
+              <ListGroup className="list-group-flush">
+                <ListGroup.Item>
+                  <b>Empresa: Fundação Educere</b>
+                </ListGroup.Item>
+                <ListGroup.Item>
+                  <b>
+                    Certificação: NR33{" "}
+                    <Badge className="nbr" bg="success">
+                      <b>Válido</b>
+                    </Badge>
+                  </b>
+                </ListGroup.Item>
+                <ListGroup.Item>
+                  <b>Integração:{" "}</b>
+                  <Badge className="nbr" bg="success">
+                    <b>Válido</b>
+                  </Badge>
+                </ListGroup.Item>
+          
+              </ListGroup>
+              <Card.Body>
+                <Button variant="primary">
+                  <b>Avançar para reconhecimento facial</b>
+                </Button>
+              </Card.Body>
+            </Card>
           </Row>
         </Container>
       </section>
