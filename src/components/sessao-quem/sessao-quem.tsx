@@ -59,14 +59,11 @@ class SessaoQuem extends Component {
               <Card.Body>
                 <Button variant="primary">
                   <b>Avançar para reconhecimento facial</b>
-                  <Link to=".camera"></Link>
+                  <Link to="#camera"></Link>
                 </Button>
               </Card.Body>
             </Card>
           </Row>
-        </Container>
-        <Container className = "camera">
-        <Webcam audio={false}/>
         </Container>
       </section>
     );
