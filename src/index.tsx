@@ -5,6 +5,7 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
 import reportWebVitals from './reportWebVitals';
 import SessaoQuem from "./components/sessao-quem/sessao-quem";
+import SessaoCamera from "./components/sessao-quem/sessao-camera";
 
 
 const root = ReactDOM.createRoot(
@@ -14,6 +15,8 @@ root.render(
   <React.StrictMode>
     <Router>
       <SessaoQuem />
+      <SessaoCamera />
+
     </Router>
   </React.StrictMode>
 );

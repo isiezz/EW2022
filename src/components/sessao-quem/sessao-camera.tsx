@@ -10,7 +10,7 @@ import {
   Button,
 } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import "./sessao-quem.scss";
+import "./sessao-camera.scss";
 import img from "../../images/ImgGeane.jpeg";
 import logo from "../../images/logo_coamo.png";
 import Webcam from "react-webcam";
@@ -27,11 +27,8 @@ class WebcamCapture extends React.Component {
 class SessaoCamera extends Component {
   render(): React.ReactNode {
     return (
-      <section id="camera">
+      <section id="SessaoCamera">
         <Container>
-    
-        </Container>
-        <Container className = "camera">
         <Webcam audio={false}/>
         </Container>
       </section>

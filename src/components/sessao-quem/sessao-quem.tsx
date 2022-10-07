@@ -8,6 +8,8 @@ import {
   ListGroup,
   Badge,
   Button,
+  Nav,
+  Navbar,
 } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "./sessao-quem.scss";
@@ -58,8 +60,7 @@ class SessaoQuem extends Component {
               </ListGroup>
               <Card.Body>
                 <Button variant="primary">
-                  <b>Avançar para reconhecimento facial</b>
-                  <Link to="#camera"></Link>
+                <Nav.Link href="#SessaoCamera"><b>Avançar para reconhecimento facial</b></Nav.Link>
                 </Button>
               </Card.Body>
             </Card>
