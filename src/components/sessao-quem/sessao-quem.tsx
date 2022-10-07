@@ -18,7 +18,7 @@ const WebcamComponent = () => <Webcam />;
 class WebcamCapture extends React.Component {
   render() {
     const videoConstraints = {
-      facingMode: "user"
+      facingMode: "user",
     };
 
     return <Webcam videoConstraints={videoConstraints} />;
@@ -29,9 +29,9 @@ class SessaoQuem extends Component {
     return (
       <section id="quemPassouAqui">
         <Container>
-          <img src={logo} alt="logo" className="logo"/>
+          <img src={logo} alt="logo" className="logo" />
           <Row className="row">
-            <Card className = "cartao"style={{ width: "80%" }}>
+            <Card className="cartao" style={{ width: "80%" }}>
               <Card.Img variant="top" src={img} width={"100%"} />
               <Card.Body>
                 <Card.Title>Geane Magalhães Reis</Card.Title>
@@ -58,12 +58,15 @@ class SessaoQuem extends Component {
               </ListGroup>
               <Card.Body>
                 <Button variant="primary">
-                <Webcam audio={false}/>
-            <b>Avançar para reconhecimento facial</b>
+                  <b>Avançar para reconhecimento facial</b>
+                  <Link to=".camera"></Link>
                 </Button>
               </Card.Body>
             </Card>
           </Row>
+        </Container>
+        <Container className = "camera">
+        <Webcam audio={false}/>
         </Container>
       </section>
     );
